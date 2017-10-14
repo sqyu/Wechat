@@ -18,7 +18,7 @@ This command-line program supports the following modes:
   
   8. Merriam-Webster dictionary
   
-  9. Ytenx dictionary, a dictionary for ancient classical Chinese phonology
+  9. Ytenx dictionary, an online dictionary that incorporates several ancient "rime dictionaries" on ancient classical Chinese phonology
   
   10. Wikipedia
   
