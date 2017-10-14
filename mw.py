@@ -5,7 +5,7 @@ import re
 from merriam_webster.api import (LearnersDictionary, CollegiateDictionary,
                                  WordNotFoundException)
 
-learnkey, collkey = ("afc272ec-7b66-44c2-8a8a-8bbecfa29352", "1a62c644-502b-413b-b656-b0b15268a4a7")
+learnkey, collkey = ("0", "1") ## You need to get your own API key from Merriam-Webster
 
 def lookup_single(query):
     query = query.encode("utf-8")
