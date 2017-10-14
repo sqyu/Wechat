@@ -1,6 +1,6 @@
 This is an auto-response bot I wrote for the Chinese mobile messaging app WeChat (微信).
 
-This command-line program supports the following modes: 
+This command-line program interactively supports the following modes: 
 
   1. automated chatting
   
