@@ -8,6 +8,7 @@ import random
 import re
 import requests
 
+tuling_key = "0" ## You need to get your own api key from http://www.tuling123.com/openapi/api
 
 def process_response(text):
     if not (re.search(u"爱|喜欢|爱你|喜欢你|想你|爱上你|想我|爱我|喜欢我|爱上我", text) is None):
@@ -21,7 +22,7 @@ def auto(msg):
     hash.update(my_glob._from_UN(msg['FromUserName']).encode("utf-8"))
     userid = hash.hexdigest()
     data = {
-        "key":"5f07968e58fd47b096561e74125a4c44",
+        "key":tuling_key,
         "info":msg['Text'].encode("utf-8"),
         "loc":"美國",
         "userid":userid
