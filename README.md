@@ -1,4 +1,4 @@
-This is an auto-response bot I wrote for the Chinese mobile messaging app WeChat (微信).
+This is an auto-response bot I wrote (for self-use, for fun) for the Chinese mobile messaging app WeChat (微信).
 
 This command-line program interactively supports the following modes: 
 
