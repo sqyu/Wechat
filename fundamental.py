@@ -3,6 +3,7 @@ import my_glob
 import itchat
 import user
 
+your_name = u"機器人"
 
 def remove_dup(seq):
     seen = set()
@@ -63,7 +64,7 @@ def first_greeting(to, msg=None):
         to = my_glob._group_member_NN(msg)
     if to == "None":
         to = ""
-    return u"你好" + to + bool(sig)*"(" + sig + bool(sig)*")" + u"，我是小異邦人，請從以下模式中選擇（數字或關鍵字）：" + my_glob.greeting_modes+u"\n\n你還可以嘗試發送語音，撤回消息，或者撤回定位和好友名片！" + u"\n\nP.S. 我主人在睡覺！zZ" * my_glob.sleeping + (my_glob.prompt_message!="") * "\n\n" + my_glob.prompt_message
+    return u"你好" + to + bool(sig)*"(" + sig + bool(sig)*")" + u"，我是小"+your_name+u"，請從以下模式中選擇（數字或關鍵字）：" + my_glob.greeting_modes+u"\n\n你還可以嘗試發送語音，撤回消息，或者撤回定位和好友名片！" + u"\n\nP.S. 我主人在睡覺！zZ" * my_glob.sleeping + (my_glob.prompt_message!="") * "\n\n" + my_glob.prompt_message
 
 
 def second_greeting():
