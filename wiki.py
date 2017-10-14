@@ -11,6 +11,11 @@ import re
 from googleapiclient.discovery import build
 from googleapiclient import errors
 
+## Get two sets of your own API keys and API IDs from Google CSE
+my_api_keys = ["1", "2"]
+my_cse_ids = ["3", "4"]
+which_api = 0
+
 max_results = 2
 max_return = 5
 
@@ -63,12 +68,6 @@ def wiki0(msg):
             all_titles = all_titles + titles
         except Exception as e: print("Error occurred in wiki.py: "); print(e)
     return return_text
-
-
-my_api_keys = ["AIzaSyA-GWs1PmRi9cWgj0Cf_cpBPb8xwGIWaDI", "AIzaSyAWJHxr0NU0NyUWiEDyNgvVptkjfF2vPDc"]
-my_cse_ids = ["001012814276132725208:peezibta2ho", "003746443543527737292:tniay4upnbg"]
-# sqyu, masami
-which_api = 0
 
 def google_search(search_term, api_key, cse_id, **kwargs):
     service = build("customsearch", "v1", developerKey=api_key)
