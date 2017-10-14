@@ -16,10 +16,11 @@ import my_glob
 
 
 #Variables that contains the user credentials to access Twitter API
-access_token = "4922353124-ZCsbNYl2iPbs84g8MTZDj2a0vddkI10RtOq7QJK"
-access_token_secret = "lZyjZ3t7bcwsFztQMu9IgRavvke6xw9Liho9fbh8XnY0q"
-consumer_key = "SgpEyFDv8frOOiCki32s6zvSU"
-consumer_secret = "rcvmP52WmxvVF19Lg9L1Ke6Iupsu1iC63cNISKgzRJ5cSuHL8V"
+#You need to get your own API keys from Twitter
+access_token = "1"
+access_token_secret = "2"
+consumer_key = "3"
+consumer_secret = "4"
 
 global texts, lang, good_lang
 texts = None
