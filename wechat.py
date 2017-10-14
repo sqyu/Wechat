@@ -22,6 +22,8 @@ import mw
 import ytenx
 import wiki
 
+your_name = u"機器人"
+
 class TimeoutError(Exception):
     pass
 
@@ -249,7 +251,7 @@ def process(msg, group = False):
         fundamental.mysend(u"你是" + (my_glob._to_NN(msg['FromUserName']) or u"誰？"), msg['FromUserName'])
         return
     if msg['Text'] == u"你":
-        fundamental.mysend(u"我是小異邦人！", msg['FromUserName'])
+        fundamental.mysend(u"我是小"+your_name+"！", msg['FromUserName'])
         return
     #if my_glob.params.get(task="mode", UserName=msg['FromUserName']) == "CHANGE":
     for mode in ["chat", "google_translate", "chiuman", "weather", "stock", "mw", "ytenx", "wiki"]: ## In any mode, if user input is a mode name, switch to that mode
