@@ -224,7 +224,7 @@ def process(msg, group = False):
         return
     if my_glob.params.get("time", msg['FromUserName']) :
         if my_glob.params.get("mode", msg['FromUserName']) == "shutup" and (time.time() - my_glob.params.get("time", msg['FromUserName']) > 18000.0): ## If shutup, reset after 5 hrs instead of 20 mins
-            fundamental.mysend(u"上次閉嘴時間為%d分鍾前，超過五小時，已重置。\n" % int((time.time() - my_glob.params.get("time", msg['FromUserName']))/60), msg['FromUserName'])
+            fundamental.mysend(u"上次閉嘴時間為%d分鐘前，超過五小時，已重置。\n" % int((time.time() - my_glob.params.get("time", msg['FromUserName']))/60), msg['FromUserName'])
             my_glob.params.set(task="mode", UserName=msg['FromUserName'], value=None)
         elif my_glob.params.get("mode", msg['FromUserName']) != "shutup" and (time.time() - my_glob.params.get("time", msg['FromUserName']) > 1200.0):
             fundamental.mysend(u"您上次玩耍時間為%d秒前，超過二十分鐘，已重置。\n" % (time.time() - my_glob.params.get("time", msg['FromUserName'])), msg['FromUserName'])
